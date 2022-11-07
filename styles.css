@@ -66,7 +66,7 @@ body {
   -webkit-animation: gradient 4s ease infinite;
           animation: gradient 4s ease infinite;
   display: inline-block, linear infinite;
-  font-size: 200px;
+  font-size: 800px;
 }
 .drop-shadow > span {
   position: absolute;
