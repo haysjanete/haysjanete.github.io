@@ -13,7 +13,7 @@
   $contentTop: 40%;
   
   $headingPadding: 30px;
-  $headingFontSize: 100px;
+  $headingFontSize: 70px;
   
   $maskTop: 15%;
   $maskRight: 100% - $contentLeft;
@@ -472,8 +472,8 @@ body {
     
     &-heading {
       text-transform: uppercase;
-      font-size: 40px;
-      margin-bottom: 20px;
+      font-size: 20px;
+      margin-bottom: 5px;
     }
     
     &-img {

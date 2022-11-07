@@ -28,15 +28,15 @@ because it requires specific images, where more than 50% of bg is transparent or
             <div class="fnc-slide__content">
               <h2 class="fnc-slide__heading">
                 <div class="fnc-slide__heading-line">
-                  <span>Black</span>
+                  <span>Janete Hays</span>
                 </div>
                 <div class="fnc-slide__heading-line">
-                  <span>Widow</span>
+                  <span>Software Engineer</span>
                 </div>
               </h2>
               <button type="button" class="fnc-slide__action-btn">
-                Credits
-                <span data-text="Credits">Credits</span>
+                Contact Info/Settings
+                <span data-text="Contact Info/Settings">Contact Info/Settings</span>
               </button>
             </div>
           </div>
@@ -51,15 +51,15 @@ because it requires specific images, where more than 50% of bg is transparent or
             <div class="fnc-slide__content">
               <h2 class="fnc-slide__heading">
                 <div class="fnc-slide__heading-line">
-                  <span>Captain</span>
+                  <span>About</span>
                 </div>
                 <div class="fnc-slide__heading-line">
-                  <span>America</span>
+                  <span>Me</span>
                 </div>
               </h2>
               <button type="button" class="fnc-slide__action-btn">
-                Credits
-                <span data-text="Credits">Credits</span>
+                Contact Info/Settings
+                <span data-text="Contact Info/Settings">Contact Info/Settings</span>
               </button>
             </div>
           </div>
@@ -74,15 +74,15 @@ because it requires specific images, where more than 50% of bg is transparent or
             <div class="fnc-slide__content">
               <h2 class="fnc-slide__heading">
                 <div class="fnc-slide__heading-line">
-                  <span>Iron</span>
+                  <span>My</span>
                 </div>
                 <div class="fnc-slide__heading-line">
-                  <span>Man</span>
+                  <span>Projects</span>
                 </div>
               </h2>
               <button type="button" class="fnc-slide__action-btn">
-                Credits
-                <span data-text="Credits">Credits</span>
+                Contact Info/Settings
+                <span data-text="Contact Info/Settings">Contact Info/Settings</span>
               </button>
             </div>
           </div>
@@ -97,15 +97,15 @@ because it requires specific images, where more than 50% of bg is transparent or
             <div class="fnc-slide__content">
               <h2 class="fnc-slide__heading">
                 <div class="fnc-slide__heading-line">
-                  <span>Thor</span>
+                  <span>Fun</span>
                 </div>
                 <div class="fnc-slide__heading-line">
-                  <span>Just Thor</span>
+                  <span>Facts</span>
                 </div>
               </h2>
               <button type="button" class="fnc-slide__action-btn">
-                Credits
-                <span data-text="Credits">Credits</span>
+                Contact Info/Settings
+                <span data-text="Contact Info/Settings">Contact Info/Settings</span>
               </button>
             </div>
           </div>
@@ -121,19 +121,19 @@ because it requires specific images, where more than 50% of bg is transparent or
         </div>
         <div class="fnc-nav__controls">
           <button class="fnc-nav__control">
-            Black Widow
+            Home
             <span class="fnc-nav__control-progress"></span>
           </button>
           <button class="fnc-nav__control">
-            Captain America
+            About Me
             <span class="fnc-nav__control-progress"></span>
           </button>
           <button class="fnc-nav__control">
-            Iron Man
+            My Projects
             <span class="fnc-nav__control-progress"></span>
           </button>
           <button class="fnc-nav__control">
-            Thor
+            Fun Facts
             <span class="fnc-nav__control-progress"></span>
           </button>
         </div>
@@ -142,13 +142,12 @@ because it requires specific images, where more than 50% of bg is transparent or
     <!-- slider end -->
     <div class="demo-cont__credits">
       <div class="demo-cont__credits-close"></div>
-      <h2 class="demo-cont__credits-heading">Made by</h2>
+      <h2 class="demo-cont__credits-heading">"Programmer: A machine that turns coffee into code."</h2>
       <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/142996/profile/profile-512_5.jpg" alt="" class="demo-cont__credits-img" />
-      <h3 class="demo-cont__credits-name">Nikolay Talanov</h3>
-      <a href="https://codepen.io/suez/" target="_blank" class="demo-cont__credits-link">My codepen</a>
-      <a href="https://twitter.com/NikolayTalanov" target="_blank" class="demo-cont__credits-link">My twitter</a>
-      <h2 class="demo-cont__credits-heading">Based on</h2>
-      <a href="https://dribbble.com/shots/2375246-Fashion-Butique-slider-animation" target="_blank" class="demo-cont__credits-link">Concept by Kreativa Studio</a>
+      <h3 class="demo-cont__credits-name">Contact Me!</h3>
+      <a href="https://www.linkedin.com/in/janete-hays/" target="_blank" class="demo-cont__credits-link">My linkedin</a>
+      <a href="https://gitlab.com/haysjanete" target="_blank" class="demo-cont__credits-link">My Gitlab</a>
+      <h2 class="demo-cont__credits-heading">For easier to read effect toggle button below.</h2>
       <h4 class="demo-cont__credits-blend">Global Blend Mode</h4>
       <div class="colorful-switch">
         <input type="checkbox" class="colorful-switch__checkbox js-activate-global-blending" id="colorful-switch-cb" />
@@ -332,7 +331,7 @@ autoSliding - boolean
 autoSlidingDelay - delay in ms. If audoSliding is on and no value provided, default value is 5000
 blockASafterClick - boolean. If user clicked any sliding control, autosliding won't start again
 */
-fncSlider(".example-slider", {autoSlidingDelay:7000});
+fncSlider(".example-slider", {blockASafterClick:true});
 
 var $demoCont = document.querySelector(".demo-cont");
 
