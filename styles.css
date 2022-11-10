@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Cookie&display=swap);
+
 .fnc {
   /* you can add color names and their values here
   and then simply add classes like .m--blend-$colorName to .fnc-slide 
@@ -27,13 +29,13 @@
   background-color: #575757;
 }
 .fnc-slider .m--blend-green .fnc-slide__inner {
-  background-color: #6d9b98;
+  background-color: #083b44;
 }
 .fnc-slider .m--blend-green .fnc-slide__mask-inner {
-  background-color: #42605E;
+  background-color: #083b44;
 }
 .fnc-slider .m--navbg-green {
-  background-color: #42605E;
+  background-color: #083b44;
 }
 .fnc-slider .m--blend-red .fnc-slide__inner {
   background-color: #ea2329;
@@ -88,20 +90,31 @@
   transition: transform 1s 0.6666666667s ease-in-out;
   transform: translate3d(0, 0, 0);
 }
+.fnc-slide body, .fnc-slide html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.fnc-slide *, .fnc-slide *:before, .fnc-slide *:after {
+  box-sizing: border-box;
+}
+
 .fnc-slide__mask {
   overflow: hidden;
+  filter: blur(20px);
+  -webkit-clip-path: inset(1em);
+  clip-path: inset(1em);
   z-index: 1;
-  position: absolute;
-  right: 60%;
+  position: fixed;
+  right: 30%;
   top: 15%;
-  width: 50.25vh;
+  width: 100vh;
   height: 67vh;
-  margin-right: -90px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 6vh 0, 6vh 61vh, 44vh 61vh, 44vh 6vh, 6vh 6vh);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 0, 6vh 0, 6vh 61vh, 44vh 61vh, 44vh 6vh, 6vh 6vh);
+  margin-right: -100px;
   transform-origin: 50% 0;
   transition-timing-function: ease-in-out;
 }
+
 .m--before-sliding .fnc-slide__mask {
   transform: rotate(-10deg) translate3d(200px, 0, 0);
   opacity: 0;
@@ -127,7 +140,6 @@
   margin-top: -50vh;
   background-size: cover;
   background-position: center center;
-  background-blend-mode: luminosity;
   transform-origin: 50% 16.5vh;
   transition-timing-function: ease-in-out;
 }
@@ -145,17 +157,15 @@
 .fnc-slide__content {
   z-index: 2;
   position: absolute;
-  left: 40%;
-  top: 40%;
+  left: 35%;
+  top: 35%;
 }
 .fnc-slide__heading {
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
 .fnc-slide__heading-line {
-  overflow: hidden;
   position: relative;
-  padding-right: 20px;
+  padding-right: 10px;
   font-size: 70px;
   color: #fff;
   word-spacing: 10px;
@@ -175,8 +185,65 @@
   transform: translateY(-100%);
 }
 .fnc-slide__heading-line span {
+  font-family: "Cookie", cursive;
   display: block;
-}
+    background-image: linear-gradient(-225deg, #7C0B2B 20%, #ff1361 50%, #4361ee 67%, #4895ef 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: gradient 4s ease infinite;
+    animation: gradient 4s ease infinite;
+    display: inline-block, linear infinite;
+    font-size: 100px;
+  }
+  @media (max-width: 980px) {
+    .glass {
+      -webkit-clip-path: inset(5em);
+              clip-path: inset(5em);
+    }
+  }
+  @-webkit-keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  .wave {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    -webkit-animation: wave 10s -3s linear infinite;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+
 .m--before-sliding .fnc-slide__heading-line span {
   transform: translateY(-100%);
 }
@@ -424,8 +491,9 @@ body {
 }
 .example-slider .fnc-slide-1 .fnc-slide__inner,
 .example-slider .fnc-slide-1 .fnc-slide__mask-inner {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/blackwidow.jpg");
+  background-image: url("https://thumbs.dreamstime.com/b/abstract-coding-wallpaper-dark-text-programming-future-concept-d-rendering-147291405.jpg");
 }
+
 .example-slider .fnc-slide-2 .fnc-slide__inner,
 .example-slider .fnc-slide-2 .fnc-slide__mask-inner {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/captainamerica.jpg");
@@ -619,3 +687,6 @@ body {
   transition-timing-function: ease;
   transform: rotate(-45deg) scaleX(0) translateZ(0);
 }/*# sourceMappingURL=styles.css.map */
+
+
+
