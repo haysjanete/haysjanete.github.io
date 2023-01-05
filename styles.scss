@@ -520,19 +520,19 @@ body {
     &-1 {
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('/images/profile\ picture.jpg'); 
+        background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v627-aew-41-technologybackground_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=830e4e729fe5bfb776d8789227be01d3'); 
       }
     }
     &-2 {
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/captainamerica.jpg');
+        background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v627-aew-41-technologybackground_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=830e4e729fe5bfb776d8789227be01d3');
       }
     }
     &-3 {
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/ironman-alt.jpg');
+        background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v627-aew-41-technologybackground_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=830e4e729fe5bfb776d8789227be01d3');
       }
 
       .fnc-slide__inner:before {
@@ -548,7 +548,7 @@ body {
     &-4 {
       .fnc-slide__inner,
       .fnc-slide__mask-inner {
-        background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/thor.jpg');
+        background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v627-aew-41-technologybackground_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=830e4e729fe5bfb776d8789227be01d3');
       }
 
       .fnc-slide__inner:before {
@@ -612,7 +612,6 @@ $cubOut: cubic-bezier(.67,-0.16,.47,1.61);
     width: $w + $outerOffset*2;
     height: $h + $outerOffset*2;
     border-radius: $br + $outerOffset;
-    background: #314239;
     transition: background-color 0.3s;
   }
 
