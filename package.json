@@ -11,7 +11,7 @@
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "parcel-bundler": "^1.6.1",
-    "scss": "0.2.4",
+    "scss": "0.2.4"
   },
   "devDependencies": {
     "@babel/core": "7.2.0",
